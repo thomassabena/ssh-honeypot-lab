@@ -9,3 +9,10 @@ testpaths = ["tests"]
 
 [tool.ruff]
 line-length = 88
+
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
