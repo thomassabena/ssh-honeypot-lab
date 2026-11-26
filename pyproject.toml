@@ -3,6 +3,9 @@ name = "ssh-honeypot-lab"
 version = "0.1.0"
 description = "A small SSH honeypot for experimenting with different service configurations."
 requires-python = ">=3.11"
+dependencies = [
+    "asyncssh==2.24.1",
+]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
